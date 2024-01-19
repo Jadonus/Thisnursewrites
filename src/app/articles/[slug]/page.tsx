@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs/promises";
 let sh = require("showdown");
 import { useState } from "react";
-export default function article() {
+export default function Article() {
   let [html, setHtml] = useState("");
   let [er, setEr] = useState(false);
   let converter = new sh.Converter();

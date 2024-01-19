@@ -7,6 +7,7 @@ import { ArrowRight, PersonStanding } from "lucide-react";
 import Nav from "@/components/ui/Nav";
 import About from "@/components/ui/about";
 import Experience from "@/components/ui/Experience";
+import Contact from "@/components/ui/contact";
 
 export default function Component() {
   return (
@@ -45,7 +46,7 @@ export default function Component() {
           </div>
         </section>
         <p className="mt-12 ml-12 text-2xl md:text-3xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100">
-          I write for your magazine.
+          I write for your business.
         </p>
         <p className="text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300">
           As someone who as been in the healthcare industry for over 20 years, I
@@ -56,6 +57,8 @@ export default function Component() {
         <About />
         <hr className="m-24" />
         <Experience />
+        <hr className="m-24" />
+        <Contact />
       </div>
     </>
   );

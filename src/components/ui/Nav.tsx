@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import { StethoscopeIcon, UserRound } from "lucide-react";
+import { SidebarClose, StethoscopeIcon, UserRound, X } from "lucide-react";
 import Link from "next/link";
 import { Menu } from "lucide-react";
 export default function Nav() {
@@ -35,13 +35,13 @@ export default function Nav() {
           <div className="flex space-x-4">
             <Link
               className="text-lg md:text-xl lg:text-2xl  hover:text-gray-900 dark:hover:text-gray-100"
-              href="#"
+              href="#about"
             >
               About Me
             </Link>
             <Link
               className="text-lg md:text-xl lg:text-2xl  hover:text-gray-900 dark:hover:text-gray-100"
-              href="#"
+              href="/articles"
             >
               Articles
             </Link>
@@ -49,7 +49,7 @@ export default function Nav() {
         ) : (
           <button onClick={() => setShowHam(!showHam)}>
             {" "}
-            <Menu />{" "}
+            {!showHam ? <Menu /> : <X />}
           </button>
         )}
       </nav>

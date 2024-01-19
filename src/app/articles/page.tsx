@@ -8,7 +8,7 @@ let sh = require("showdown");
 let converter = new sh.Converter();
 let html = converter.makeHtml(article);
 import Nav from "@/components/ui/Nav";
-export default function articlespage() {
+export default function Articlespage() {
   return (
     <>
       <Nav />
