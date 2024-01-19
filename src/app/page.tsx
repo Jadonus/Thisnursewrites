@@ -5,7 +5,8 @@
  */
 import Link from "next/link";
 import { ArrowRight, PersonStanding } from "lucide-react";
-import Nav from "@/components/ui/Nav";
+import dynamic from "next/dynamic";
+const DynamicNav = dynamic(() => import("@/components/ui/Nav"), { ssr: false });
 import About from "@/components/ui/about";
 import Experience from "@/components/ui/Experience";
 import Contact from "@/components/ui/contact";
@@ -14,7 +15,7 @@ export default function Component() {
   return (
     <>
       <div className="relative w-full h-screen flex flex-col bg-gray-100 dark:bg-gray-800">
-        <Nav />
+        <DynamicNav />
         <section className="flex-1 flex items-center justify-center">
           <div className="z-10 container px-4 md:px-6 flex flex-col md:flex-row-reverse items-center space-y-6 md:space-y-0 md:space-x-6">
             <div className="w-full md:w-1/2">
