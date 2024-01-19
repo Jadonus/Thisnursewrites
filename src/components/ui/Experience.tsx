@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <>
       <p className="mt-12 text-center ml-12 text-2xl md:text-3xl lg:text-5xl  font-bold text-gray-900 dark:text-gray-100">
-        What I'm experienced in
+        What I&#39;m experienced in
       </p>
       <div className="flex flex-col  items-center justify-center text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 h-screen">
         <p className="flex m-6 items-center">
@@ -41,9 +41,9 @@ export default function Experience() {
       <p className="text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300">
         As a freelance nurse writer, I craft content that is informative,
         engaging, and tailored to the specific needs of each audience. Whether
-        it's educational articles, blog posts, or medical content, I can provide
-        valuable insights across a range of healthcare disciplines. Here are
-        some examples of my experience:
+        it&#39;s educational articles, blog posts, or medical content, I can
+        provide valuable insights across a range of healthcare disciplines. Here
+        are some examples of my experience:
       </p>
     </>
   );

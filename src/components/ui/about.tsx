@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <div className="flex flex-col  h-screen justify-center m-12 md:flex-row">
@@ -18,7 +20,7 @@ export default function About() {
         </p>
       </div>
       <div className=" order-first md:w-1/2">
-        <img
+        <Image
           className=" rounded-lg"
           src="mom.png"
           alt="Hannah Gearhart"

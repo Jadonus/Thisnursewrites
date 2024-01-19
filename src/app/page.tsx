@@ -8,7 +8,7 @@ import Nav from "@/components/ui/Nav";
 import About from "@/components/ui/about";
 import Experience from "@/components/ui/Experience";
 import Contact from "@/components/ui/contact";
-
+import Image from "next/image";
 export default function Component() {
   return (
     <>
@@ -17,7 +17,7 @@ export default function Component() {
         <section className="flex-1 flex items-center justify-center">
           <div className="z-10 container px-4 md:px-6 flex flex-col md:flex-row-reverse items-center space-y-6 md:space-y-0 md:space-x-6">
             <div className="w-full md:w-1/2">
-              <img
+              <Image
                 alt="Jane Doe"
                 className="w-full mt-12 h-full object-cover rounded-full"
                 height="400"
@@ -51,7 +51,7 @@ export default function Component() {
         <p className="text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300">
           As someone who as been in the healthcare industry for over 20 years, I
           understand medical issues, and can give a knowledgeable voice to your
-          busines's content.
+          busines&#39;s content.
         </p>
         <hr className="m-24" />
         <About />
