@@ -1,3 +1,4 @@
+"use client";
 import Nav from "@/components/ui/Nav";
 import { MailCheck } from "lucide-react";
 

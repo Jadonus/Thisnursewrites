@@ -1,4 +1,7 @@
 const articlearray = ["/Test Article.md", "/Test Article 2.md"];
+import dynamic from "next/dynamic";
+
+const DynamicNav = dynamic(() => import("@/components/ui/Nav"), { ssr: false });
 import path from "path";
 import fs from "fs/promises";
 import Link from "next/link";
@@ -7,11 +10,10 @@ const article = `# Hello World!
 let sh = require("showdown");
 let converter = new sh.Converter();
 let html = converter.makeHtml(article);
-import Nav from "@/components/ui/Nav";
 export default function Articlespage() {
   return (
     <>
-      <Nav />
+      <DynamicNav />
 
       <div className="h-screen ">
         {articlearray.map(async (articlePath) => {
