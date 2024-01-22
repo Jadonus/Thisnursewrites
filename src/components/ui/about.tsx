@@ -21,11 +21,12 @@ export default function About() {
       </div>
       <div className=" order-first md:w-1/2">
         <Image
+          height="500"
           className=" rounded-lg"
-          src="mom.png"
+          src="/mom.png"
           alt="Hannah Gearhart"
           style={{
-            aspectRatio: "500/500",
+            aspectRatio: "500/700",
             objectFit: "cover",
             maxWidth: "100%",
           }}

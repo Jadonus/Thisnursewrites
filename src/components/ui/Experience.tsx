@@ -11,10 +11,10 @@ import {
 export default function Experience() {
   return (
     <>
-      <p className="mt-12 text-center ml-12 text-2xl md:text-3xl lg:text-5xl  font-bold text-gray-900 dark:text-gray-100">
+      <p className="mt-12 text-center ml-12 text-2xl md:text-3xl lg:text-5xl font-bold text-gray-900 dark:text-gray-100">
         What I&#39;m experienced in
       </p>
-      <div className="flex flex-col  items-center justify-center text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 h-screen">
+      <div className="flex flex-col items-center justify-center text-xl mt-6 ml-12 md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 h-screen">
         <p className="flex m-6 items-center">
           <HeartCrack color="black" size={50} /> Chronic Diseases
         </p>

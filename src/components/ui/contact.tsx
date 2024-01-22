@@ -37,7 +37,11 @@ export default function Contact() {
           value="Contact us from - example.com"
         />
         <input type="hidden" name="replyTo" value="@" />
-        <input type="hidden" name="redirectTo" value="/success" />
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="https://thisnursewrites.vercel.app/success"
+        />
         <input
           className="rounded-lg m-4 p-4 bg-black text-white"
           type="submit"
